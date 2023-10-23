@@ -8,6 +8,6 @@
 >
 > - **name**: Ime grada iz kojeg putujemo
 > - **country, region, population, language, currency, timezone, area**: Podaci o gradu iz kojeg putujemo
-> - **transit routes**: Array gradova u koje možemo putovati iz odabranog grada
+> - **transit routes**: Array gradova u koje možemo putovati iz odabranog grada  
 
 **Frekvencija nadogradnje**: tjedno  
