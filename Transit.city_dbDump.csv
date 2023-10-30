@@ -1,5 +1,5 @@
 _id,name,contry,region,population,language,currency,timezone,area
-653fba282160d5fe64e44e12,New York City,us,Northeastern United States,"8,336,817",English,USD,EST,468.9 km²
+653fba282160d5fe64e44e12,New York City,us,Northeastern United States,"8 336 817",English,USD,EST,468.9 km²
 653fbf0d2160d5fe64e44e2c,London,gb,England,8 982 000,English,GBP,GMT,1 572 km²
 653fbf962160d5fe64e44e32,Tokyo,jp,Kanto Region,13 515 271,Japanese,JPY,JST,2 194 km²
 653fc1082160d5fe64e44e38,Paris,fr,Ile-de-France,2 140 526,French,EUR,CET,105.4 km²
