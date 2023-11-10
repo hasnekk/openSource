@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-direction: row;
+
+    column-gap: 2rem;
+}
+
+.highlightedCell {
+    background-color: yellow;
+}

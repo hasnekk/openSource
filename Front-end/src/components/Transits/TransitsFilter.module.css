@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 1rem;
+}
+
+.selectDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 1.5rem;
+}

@@ -1,0 +1,101 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://Transit/Schema/OR/labos2",
+    "title": "City transit routes",
+    "description": "Transit routes from one city and infromation about the city",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "description": "The unique identifier for a city",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the city",
+            "type": "string"
+        },
+        "country": {
+            "description": "Country of the city",
+            "type": "string"
+        },
+        "region": {
+            "description": "Region of the city",
+            "type": "string"
+        },
+        "population": {
+            "description": "Population of the city",
+            "type": "number",
+            "exclusiveMinimum": 0
+        },
+        "language": {
+            "description": "Language of the city",
+            "type": "string"
+        },
+        "currency": {
+            "description": "Currency of the city",
+            "type": "string"
+        },
+        "timezone": {
+            "description": "Timezone of the city",
+            "type": "string"
+        },
+        "area": {
+            "description": "Area of the city in km squared",
+            "type": "number",
+            "exclusiveMinimum": 0
+        },
+        "destinations": {
+            "description": "Transit routes from the city to other cities",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "The unique identifier for the destination city",
+                        "type": "string"
+                    },
+                    "departureCity": {
+                        "description": "The id (unique identifier) of the departure city",
+                        "type": "string"
+                    },
+                    "destination": {
+                        "description": "Name of the destination you can transit to from the city",
+                        "type": "string"
+                    },
+                    "distance": {
+                        "description": "Distance in km between the departure city and the destination",
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    "duration": {
+                        "description": "Duration in hours of the transit from the departure city to the destination",
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    "price": {
+                        "description": "Price of the transit in EUR from the departure city to the destination",
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    }
+                },
+                "required": [
+                    "_id",
+                    "departureCity",
+                    "destination",
+                    "distance",
+                    "duration",
+                    "price"
+                ]
+            }
+        }
+    },
+    "required": [
+        "_id",
+        "name",
+        "country",
+        "language",
+        "currency",
+        "timezone",
+        "destinations"
+    ]
+}

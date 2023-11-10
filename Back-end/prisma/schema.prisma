@@ -1,0 +1,31 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mongodb"
+    url      = env("DATABASE_URL")
+}
+
+model city {
+    id            String          @id @default(auto()) @map("_id") @db.ObjectId
+    name          String
+    country       String
+    region        String?
+    population    Int?
+    language      String
+    currency      String
+    timezone      String
+    area          Float?
+    transitRoutes transitRoutes[]
+}
+
+model transitRoutes {
+    id              String @id @default(auto()) @map("_id") @db.ObjectId
+    departureCity   String @db.ObjectId
+    departureCityId city   @relation(fields: [departureCity], references: [id])
+    destination     String
+    distance        Float
+    duration        Float
+    price           Float
+}
