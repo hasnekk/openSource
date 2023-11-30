@@ -1,0 +1,383 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "info": "Transit Routes API",
+        "version": "1.0",
+        "contact": {
+            "name": "Kristijan Hasnek",
+            "url": "https://hasnekk.github.io/PersonalSite/",
+            "email": "kh53812@fer.hr"
+        },
+        "license": {
+            "name": "MIT",
+            "identifier": "MIT"
+        }
+    },
+    "paths": {
+        "/transits/": {
+            "get": {
+                "summary": "Gets all the cities and all destinations you can go to",
+                "description": "Gets all the cities and adds them an property called destinations which is an array of all the cities you can go to from that city",
+                "responses": {
+                    "200": {
+                        "description": "All info geathered and combined",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/transits/departure/:id": {
+            "get": {
+                "summary": "Return a city with id",
+                "description": "Return a unique city with id and its destinations",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the city you want to get",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "All the destinations you can go to from a city",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "City with that id does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/transits/destination/:id": {
+            "get": {
+                "summary": "Get a detination",
+                "description": "Return a route for a city you want to go to and from wich cities you can departure to it",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the route you want to take",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the route and the departure cities",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Route with that id does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits//population/:population": {
+            "get": {
+                "summary": "Get all cities with population greater than :population",
+                "description": "Returns all cities with population greater than :population",
+                "parameters": [
+                    {
+                        "name": "population",
+                        "in": "path",
+                        "description": "The population you want to filter by",
+                        "required": true,
+                        "format": "number",
+                        "type": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns all cities with population greater than :population",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "If an server error occurs",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits/language/:language": {
+            "get": {
+                "summary": "Get all cities with language :language",
+                "description": "Returns all cities with language :language",
+                "parameters": [
+                    {
+                        "name": "language",
+                        "in": "path",
+                        "description": "The language you want to filter by",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns all cities with language :language",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "If an server error occurs",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits/updateCity/:id": {
+            "put": {
+                "summary": "Update a city",
+                "description": "Update a city with id :id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the city you want to update",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Object of a city with properties you want to update",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Returns the updated city",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "City with that id does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits/updateRoute/:id": {
+            "put": {
+                "summary": "Update a route",
+                "description": "Update a route with id :id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the route you want to update",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Object of the route with properties you want to update",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Returns the updated route",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Route with that id does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits/deleteCity/:id": {
+            "delete": {
+                "summary": "Delete a city",
+                "description": "Delete a city with id :id, and all the routes that it has",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the city you want to delete",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the deleted city",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "City with that id does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits/deleteRoute/:id": {
+            "delete": {
+                "summary": "Delete a route",
+                "description": "Delete a route with id :id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The id of the route you want to delete",
+                        "required": true,
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns the deleted route",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Route with that id does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "transits/openApi": {
+            "get": {
+                "summary": "Get the openApi file",
+                "description": "Returns the openApi file",
+                "responses": {
+                    "200": {
+                        "description": "Returns the openApi file",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "If the file does not exist",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

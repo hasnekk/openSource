@@ -1,0 +1,302 @@
+[
+    {
+        "name": "New York City",
+        "country": "us",
+        "region": "Northeastern United States",
+        "population": 8336817,
+        "language": "English",
+        "currency": "USD",
+        "timezone": "EST",
+        "area": 468.9,
+        "transitRoutes": [
+            {
+                "destination": "Los Angeles",
+                "distance": 4501.0,
+                "duration": 5,
+                "price": 265.71
+            },
+            {
+                "destination": "Chicago",
+                "distance": 1280.0,
+                "duration": 2,
+                "price": 88.57
+            },
+            {
+                "destination": "Miami",
+                "distance": 1280.0,
+                "duration": 2,
+                "price": 132.86
+            }
+        ]
+    },
+    {
+        "name": "London",
+        "country": "gb",
+        "region": "England",
+        "population": 8982000,
+        "language": "English",
+        "currency": "GBP",
+        "timezone": "GMT",
+        "area": 1572.0,
+        "transitRoutes": [
+            {
+                "destination": "Manchester",
+                "distance": 336.0,
+                "duration": 2,
+                "price": 111.43
+            },
+            {
+                "destination": "Paris",
+                "distance": 344.0,
+                "duration": 2,
+                "price": 114.29
+            },
+            {
+                "destination": "Amsterdam",
+                "distance": 357.0,
+                "duration": 3,
+                "price": 91.43
+            }
+        ]
+    },
+    {
+        "name": "Tokyo",
+        "country": "jp",
+        "region": "Kanto Region",
+        "population": 13515271,
+        "language": "Japanese",
+        "currency": "JPY",
+        "timezone": "JST",
+        "area": 2194.0,
+        "transitRoutes": [
+            {
+                "destination": "Osaka",
+                "distance": 507.0,
+                "duration": 3,
+                "price": 80.0
+            },
+            {
+                "destination": "Kyoto",
+                "distance": 455.0,
+                "duration": 2.5,
+                "price": 68.57
+            },
+            {
+                "destination": "Sapporo",
+                "distance": 1116.0,
+                "duration": 1.5,
+                "price": 114.29
+            }
+        ]
+    },
+    {
+        "name": "Paris",
+        "country": "fr",
+        "region": "Ile-de-France",
+        "population": 2140526,
+        "language": "French",
+        "currency": "EUR",
+        "timezone": "CET",
+        "area": 105.4,
+        "transitRoutes": [
+            {
+                "destination": "Lyon",
+                "distance": 465.0,
+                "duration": 2,
+                "price": 91.43
+            },
+            {
+                "destination": "Marseille",
+                "distance": 775.0,
+                "duration": 3,
+                "price": 114.29
+            },
+            {
+                "destination": "Brussels",
+                "distance": 315.0,
+                "duration": 1.5,
+                "price": 57.14
+            }
+        ]
+    },
+    {
+        "name": "Sydney",
+        "country": "au",
+        "region": "New South Wales",
+        "population": 5367206,
+        "language": "English",
+        "currency": "AUD",
+        "timezone": "AEST",
+        "area": 12368.0,
+        "transitRoutes": [
+            {
+                "destination": "Melbourne",
+                "distance": 878.0,
+                "duration": 1.5,
+                "price": 114.29
+            },
+            {
+                "destination": "Brisbane",
+                "distance": 936.0,
+                "duration": 2,
+                "price": 152.86
+            },
+            {
+                "destination": "Adelaide",
+                "distance": 1163.0,
+                "duration": 2.5,
+                "price": 191.43
+            }
+        ]
+    },
+    {
+        "name": "Berlin",
+        "country": "de",
+        "region": "Berlin-Brandenburg",
+        "population": 3769495,
+        "language": "German",
+        "currency": "EUR",
+        "timezone": "CET",
+        "area": 891.8,
+        "transitRoutes": [
+            {
+                "destination": "Hamburg",
+                "distance": 288.0,
+                "duration": 1.5,
+                "price": 57.14
+            },
+            {
+                "destination": "Munich",
+                "distance": 584.0,
+                "duration": 4,
+                "price": 114.29
+            },
+            {
+                "destination": "Frankfurt",
+                "distance": 545.0,
+                "duration": 3,
+                "price": 91.43
+            }
+        ]
+    },
+    {
+        "name": "Moscow",
+        "country": "ru",
+        "region": "Central Federal District",
+        "population": 12506468,
+        "language": "Russian",
+        "currency": "RUB",
+        "timezone": "MSK",
+        "area": 2511.0,
+        "transitRoutes": [
+            {
+                "destination": "Saint Petersburg",
+                "distance": 714.0,
+                "duration": 3,
+                "price": 142.86
+            },
+            {
+                "destination": "Kazan",
+                "distance": 815.0,
+                "duration": 4,
+                "price": 171.43
+            },
+            {
+                "destination": "Sochi",
+                "distance": 1620.0,
+                "duration": 2.5,
+                "price": 285.71
+            }
+        ]
+    },
+    {
+        "name": "Toronto",
+        "country": "ca",
+        "region": "Ontario",
+        "population": 2731571,
+        "language": "English",
+        "currency": "CAD",
+        "timezone": "EST",
+        "area": 630.2,
+        "transitRoutes": [
+            {
+                "destination": "Montreal",
+                "distance": 506.0,
+                "duration": 5,
+                "price": 114.29
+            },
+            {
+                "destination": "Vancouver",
+                "distance": 3366.0,
+                "duration": 5,
+                "price": 342.86
+            },
+            {
+                "destination": "Ottawa",
+                "distance": 450.0,
+                "duration": 4,
+                "price": 57.14
+            }
+        ]
+    },
+    {
+        "name": "Dubai",
+        "country": "ae",
+        "region": "Dubai Emirate",
+        "population": 3331000,
+        "language": "Arabic",
+        "currency": "AED",
+        "timezone": "GST",
+        "area": 4114.0,
+        "transitRoutes": [
+            {
+                "destination": "Abu Dhabi",
+                "distance": 140.0,
+                "duration": 1.5,
+                "price": 11.43
+            },
+            {
+                "destination": "Doha",
+                "distance": 379.0,
+                "duration": 1.5,
+                "price": 228.57
+            },
+            {
+                "destination": "Muscat",
+                "distance": 416.0,
+                "duration": 2,
+                "price": 57.14
+            }
+        ]
+    },
+    {
+        "name": "Zagreb",
+        "country": "hr",
+        "region": "Grad Zagreb",
+        "population": 792875,
+        "language": "Croatian",
+        "currency": "EUR",
+        "timezone": "CET",
+        "area": 641.0,
+        "transitRoutes": [
+            {
+                "destination": "Split",
+                "distance": 410.0,
+                "duration": 4,
+                "price": 28.57
+            },
+            {
+                "destination": "Rijeka",
+                "distance": 165.0,
+                "duration": 2,
+                "price": 14.29
+            },
+            {
+                "destination": "Osijek",
+                "distance": 280.0,
+                "duration": 3,
+                "price": 21.43
+            }
+        ]
+    }
+]
