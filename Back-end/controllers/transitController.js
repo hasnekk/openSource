@@ -1,6 +1,5 @@
 import express from "express";
 import fs from "fs";
-import path from "path";
 
 import { getDepartureCities, getDestinations, getDepartureCity, getDestinationCity, getDepartures, fitlerBy, addTransitRoute, addCity, updateOneCity, updateTransitRoute, deleteCity, deleteTransitRoute, deleteAllTransitRoutesFrom } from "../prisma/dataBaseOperations.js";
 
