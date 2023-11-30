@@ -181,6 +181,84 @@
                 }
             }
         },
+        "transits/addCity": {
+            "post": {
+                "summary": "Add a city",
+                "description": "Add a city with properties name, population, language, and destinations",
+                "requestBody": {
+                    "description": "Object of a city with properties",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Returns the added city",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "If an server error occurs",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "trasnit/addRoute": {
+            "post": {
+                "summary": "Add a route",
+                "description": "Add a route with properties departure, destination, and price",
+                "requestBody": {
+                    "description": "Object of a route with properties",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Returns the added route",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "If an server error occurs",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "transits/updateCity/:id": {
             "put": {
                 "summary": "Update a city",

@@ -73,46 +73,41 @@ router.get("/language/:language", async (req, res) => {
     }
 });
 
-// This API end point will add a new city and its destinations
-router.post("/add/:isTransitRoute", async (req, res) => {
-    let isTransitRoute = req.params.isTransitRoute;
 
-    isTransitRoute = JSON.parse(isTransitRoute.toLowerCase())
 
-    if (typeof isTransitRoute !== "boolean") {
-        return res.json({ error: "isTransitRoute must be boolean" });
-    }
-
+// This API end point will add a new city 
+router.post("/addCity", async (req, res) => {
     let city = req.body;
 
-    if (isTransitRoute) {
-        if (!checkIfTransitRoute(city)) {
-            return res.status(400).json({ error: "Wrong properties for transit route" });
-        }
+    if (!checkIfCity(city)) {
+        return res.status(400).json({ error: "Wrong properties for city" });
+    }
 
-        try {
-            await getDepartureCity(city.departureCity); // baca error ako ne postoji
-            city = await addTransitRoute(city);
-        } catch (e) {
-            return res.status(500).json({ error: e.message });
-        }
-
-    } else {
-
-        if (!checkIfCity(city)) {
-            return res.status(400).json({ error: "Wrong properties for city" });
-        }
-
-
-        try {
-            city = await addCity(city);
-        } catch (e) {
-            return res.status(500).json({ error: e.message });
-        }
-
+    try {
+        city = await addCity(city);
+    } catch (e) {
+        return res.status(500).json({ error: e.message });
     }
 
     return res.status(200).json(city);
+});
+
+// This API end point will add a new route
+router.post("/addRoute", async (req, res) => {
+    let route = req.body;
+
+    if (!checkIfTransitRoute(route)) {
+        return res.status(400).json({ error: "Wrong properties for transit route" });
+    }
+
+    try {
+        await getDepartureCity(route.departureCity); // baca error ako ne postoji
+        let addedRoute = await addTransitRoute(route);
+        return res.status(200).json(addedRoute);
+    } catch (e) {
+        return res.status(500).json({ error: e.message });
+    }
+
 });
 
 // This API end point will modify one city or destination
