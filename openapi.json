@@ -198,7 +198,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Returns the added city",
+                        "description": "Returns the added city and hypermedia for deleting and updating the city",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -237,7 +237,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Returns the added route",
+                        "description": "Returns the added route and hypermedia for deleting and updating the city",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -285,7 +285,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Returns the updated city",
+                        "description": "Returns the updated city and hypermedia for deleting and updating the city",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -333,7 +333,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Returns the updated route",
+                        "description": "Returns the updated route and hypermedia for deleting and updating the route",
                         "content": {
                             "application/json": {
                                 "schema": {

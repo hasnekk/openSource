@@ -89,7 +89,8 @@ router.post("/addCity", async (req, res) => {
         return res.status(500).json({ error: e.message });
     }
 
-    return res.status(200).json(city);
+    // OVO U OPEN API
+    return res.status(200).json({ city: city, deleteCity: `http://localhost:3000/transit/deleteCity/${city.id}`, updateCity: `http://localhost:3000/transit/updateCity/${city.id}` });
 });
 
 // This API end point will add a new route
@@ -100,13 +101,17 @@ router.post("/addRoute", async (req, res) => {
         return res.status(400).json({ error: "Wrong properties for transit route" });
     }
 
+    let addedRoute;
+
     try {
         await getDepartureCity(route.departureCity); // baca error ako ne postoji
-        let addedRoute = await addTransitRoute(route);
-        return res.status(200).json(addedRoute);
+        addedRoute = await addTransitRoute(route);
     } catch (e) {
         return res.status(500).json({ error: e.message });
     }
+
+    // OVO DODATI U OPEN API
+    return res.status(200).json({ route: addedRoute, deletedRoute: `http://localhost:3000/transit/deleteRoute/${addedRoute.id}`, updateRoute: `http://localhost:3000/transit/updateRoute/${addedRoute.id}` });
 
 });
 
@@ -115,18 +120,23 @@ router.put("/updateCity/:id", async (req, res) => {
     let id = req.params.id;
     let data = req.body;
 
+    let updatedCity;
+
     try {
         await getDepartureCity(id); // check if exists
-        let updatedCity = await updateOneCity(id, data);
-        return res.status(200).json(updatedCity);
+        updatedCity = await updateOneCity(id, data);
     } catch (e) {
         return res.status(404).json({ error: e.message });
     }
+
+    return res.status(200).json({ updatedCity: updatedCity, deleteCity: `http://localhost:3000/transit/deleteCity/${updatedCity.id}`, updateCity: `http://localhost:3000/transit/updateCity/${updatedCity.id}` });
 });
 
 router.put("/updateRoute/:id", async (req, res) => {
     let id = req.params.id;
     let data = req.body;
+
+    let updatedRoute;
 
     try {
 
@@ -135,11 +145,12 @@ router.put("/updateRoute/:id", async (req, res) => {
         }
 
         await getDestinationCity(id); // check if exists
-        let updatedRoute = await updateTransitRoute(id, data);
-        return res.status(200).json(updatedRoute);
+        updatedRoute = await updateTransitRoute(id, data);
     } catch (e) {
         return res.status(404).json({ error: e.message });
     }
+
+    return res.status(200).json({ updatedRoute: updatedRoute, deletedRoute: `http://localhost:3000/transit/deleteRoute/${updatedRoute.id}`, updateRoute: `http://localhost:3000/transit/updateRoute/${updatedRoute.id}` });
 
 });
 
