@@ -1,0 +1,45 @@
+.refresh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.refresh>p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.refresh>button {
+    border: none;
+    width: 8rem;
+    height: 4rem;
+
+    background-color: rgba(80, 40, 255, 1);
+
+    margin-top: 2rem;
+
+    color: white;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 1rem;
+}
+
+.btnDiv>* {
+    width: 20rem;
+    height: 5rem;
+    border: none;
+}
+
+.refresh>button:hover {
+    background-color: rgba(80, 40, 255, 0.8);
+}

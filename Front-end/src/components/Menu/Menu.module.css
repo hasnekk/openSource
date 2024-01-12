@@ -1,0 +1,76 @@
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(80, 40, 255, 1);
+
+    padding: 1rem;
+
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    column-gap: 1rem;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    color: white;
+    opacity: 0.8;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.menuItem:hover {
+    transform: scale(1.1);
+}
+
+:global(.active) {
+    transform: scale(1.2);
+}
+
+.user {
+    position: absolute;
+    right: 1rem;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.2rem;
+
+    height: 100%;
+}
+
+.user>img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.user>span {
+    color: white
+}
+
+.logOutBtn {
+    opacity: 0.7;
+}

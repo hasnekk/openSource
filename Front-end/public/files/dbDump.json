@@ -1,0 +1,372 @@
+[
+  {
+    "_id": "653fba282160d5fe64e44e12",
+    "name": "New York City",
+    "country": "us",
+    "region": "Northeastern United States",
+    "population": 8336817,
+    "language": "English",
+    "currency": "USD",
+    "timezone": "EST",
+    "area": 468.9,
+    "destinations": [
+      {
+        "_id": "653fbc1e2160d5fe64e44e1a",
+        "departureCity": "653fba282160d5fe64e44e12",
+        "destination": "Los Angeles",
+        "distance": 4501,
+        "duration": 5,
+        "price": 265.71
+      },
+      {
+        "_id": "653fbde02160d5fe64e44e28",
+        "departureCity": "653fba282160d5fe64e44e12",
+        "destination": "Chicago",
+        "distance": 1280,
+        "duration": 2,
+        "price": 88.57
+      },
+      {
+        "_id": "653fbdfc2160d5fe64e44e29",
+        "departureCity": "653fba282160d5fe64e44e12",
+        "destination": "Miami",
+        "distance": 1280,
+        "duration": 2,
+        "price": 132.86
+      }
+    ]
+  },
+  {
+    "_id": "653fbf0d2160d5fe64e44e2c",
+    "name": "London",
+    "country": "gb",
+    "region": "England",
+    "population": 8982000,
+    "language": "English",
+    "currency": "GBP",
+    "timezone": "GMT",
+    "area": 1572,
+    "destinations": [
+      {
+        "_id": "653fbf292160d5fe64e44e2e",
+        "departureCity": "653fbf0d2160d5fe64e44e2c",
+        "destination": "Manchester",
+        "distance": 336,
+        "duration": 2,
+        "price": 111.43
+      },
+      {
+        "_id": "653fbf3c2160d5fe64e44e2f",
+        "departureCity": "653fbf0d2160d5fe64e44e2c",
+        "destination": "Paris",
+        "distance": 344,
+        "duration": 2,
+        "price": 114.29
+      },
+      {
+        "_id": "653fbf592160d5fe64e44e30",
+        "departureCity": "653fbf0d2160d5fe64e44e2c",
+        "destination": "Amsterdam",
+        "distance": 357,
+        "duration": 3,
+        "price": 91.43
+      }
+    ]
+  },
+  {
+    "_id": "653fbf962160d5fe64e44e32",
+    "name": "Tokyo",
+    "country": "jp",
+    "region": "Kanto Region",
+    "population": 13515271,
+    "language": "Japanese",
+    "currency": "JPY",
+    "timezone": "JST",
+    "area": 2194,
+    "destinations": [
+      {
+        "_id": "653fbfd82160d5fe64e44e34",
+        "departureCity": "653fbf962160d5fe64e44e32",
+        "destination": "Osaka",
+        "distance": 507,
+        "duration": 3,
+        "price": 80
+      },
+      {
+        "_id": "653fc0052160d5fe64e44e35",
+        "departureCity": "653fbf962160d5fe64e44e32",
+        "destination": "Kyoto",
+        "distance": 455,
+        "duration": 2.5,
+        "price": 68.57
+      },
+      {
+        "_id": "653fc0462160d5fe64e44e36",
+        "departureCity": "653fbf962160d5fe64e44e32",
+        "destination": "Sapporo",
+        "distance": 1116,
+        "duration": 1.5,
+        "price": 114.29
+      }
+    ]
+  },
+  {
+    "_id": "653fc1082160d5fe64e44e38",
+    "name": "Paris",
+    "country": "fr",
+    "region": "Ile-de-France",
+    "population": 2140526,
+    "language": "French",
+    "currency": "EUR",
+    "timezone": "CET",
+    "area": 105.4,
+    "destinations": [
+      {
+        "_id": "653fc12e2160d5fe64e44e3a",
+        "departureCity": "653fc1082160d5fe64e44e38",
+        "destination": "Lyon",
+        "distance": 465,
+        "duration": 2,
+        "price": 91.43
+      },
+      {
+        "_id": "653fc1422160d5fe64e44e3b",
+        "departureCity": "653fc1082160d5fe64e44e38",
+        "destination": "Marseille",
+        "distance": 775,
+        "duration": 3,
+        "price": 114.29
+      },
+      {
+        "_id": "653fc17b2160d5fe64e44e3c",
+        "departureCity": "653fc1082160d5fe64e44e38",
+        "destination": "Brussels",
+        "distance": 315,
+        "duration": 1.5,
+        "price": 57.14
+      }
+    ]
+  },
+  {
+    "_id": "653fc1bf2160d5fe64e44e3e",
+    "name": "Sydney",
+    "country": "au",
+    "region": "New South Wales",
+    "population": 5367206,
+    "language": "English",
+    "currency": "AUD",
+    "timezone": "AEST",
+    "area": 12368,
+    "destinations": [
+      {
+        "_id": "653fc1e22160d5fe64e44e40",
+        "departureCity": "653fc1bf2160d5fe64e44e3e",
+        "destination": "Melbourne",
+        "distance": 878,
+        "duration": 1.5,
+        "price": 114.29
+      },
+      {
+        "_id": "653fc1fc2160d5fe64e44e41",
+        "departureCity": "653fc1bf2160d5fe64e44e3e",
+        "destination": "Brisbane",
+        "distance": 936,
+        "duration": 2,
+        "price": 152.86
+      },
+      {
+        "_id": "653fc2292160d5fe64e44e42",
+        "departureCity": "653fc1bf2160d5fe64e44e3e",
+        "destination": "Adelaide",
+        "distance": 1163,
+        "duration": 2.5,
+        "price": 191.43
+      }
+    ]
+  },
+  {
+    "_id": "653fc2772160d5fe64e44e44",
+    "name": "Berlin",
+    "country": "de",
+    "region": "Berlin-Brandenburg",
+    "population": 3769495,
+    "language": "German",
+    "currency": "EUR",
+    "timezone": "CET",
+    "area": 891.8,
+    "destinations": [
+      {
+        "_id": "653fc2932160d5fe64e44e46",
+        "departureCity": "653fc2772160d5fe64e44e44",
+        "destination": "Hamburg",
+        "distance": 288,
+        "duration": 1.5,
+        "price": 57.14
+      },
+      {
+        "_id": "653fc2ad2160d5fe64e44e47",
+        "departureCity": "653fc2772160d5fe64e44e44",
+        "destination": "Munich",
+        "distance": 584,
+        "duration": 4,
+        "price": 114.29
+      },
+      {
+        "_id": "653fc2c02160d5fe64e44e48",
+        "departureCity": "653fc2772160d5fe64e44e44",
+        "destination": "Frankfurt",
+        "distance": 545,
+        "duration": 3,
+        "price": 91.43
+      }
+    ]
+  },
+  {
+    "_id": "653fc2f22160d5fe64e44e4a",
+    "name": "Moscow",
+    "country": "ru",
+    "region": "Central Federal District",
+    "population": 12506468,
+    "language": "Russian",
+    "currency": "RUB",
+    "timezone": "MSK",
+    "area": 2511,
+    "destinations": [
+      {
+        "_id": "653fc3112160d5fe64e44e4c",
+        "departureCity": "653fc2f22160d5fe64e44e4a",
+        "destination": "Saint Petersburg",
+        "distance": 714,
+        "duration": 3,
+        "price": 142.86
+      },
+      {
+        "_id": "653fc3282160d5fe64e44e4d",
+        "departureCity": "653fc2f22160d5fe64e44e4a",
+        "destination": "Kazan",
+        "distance": 815,
+        "duration": 4,
+        "price": 171.43
+      },
+      {
+        "_id": "653fc3ab2160d5fe64e44e50",
+        "departureCity": "653fc2f22160d5fe64e44e4a",
+        "destination": "Sochi",
+        "distance": 1620,
+        "duration": 2.5,
+        "price": 285.71
+      }
+    ]
+  },
+  {
+    "_id": "653fc4302160d5fe64e44e54",
+    "name": "Toronto",
+    "country": "ca",
+    "region": "Ontario",
+    "population": 2731571,
+    "language": "English",
+    "currency": "CAD",
+    "timezone": "EST",
+    "area": 630.2,
+    "destinations": [
+      {
+        "_id": "653fc4562160d5fe64e44e56",
+        "departureCity": "653fc4302160d5fe64e44e54",
+        "destination": "Montreal",
+        "distance": 506,
+        "duration": 5,
+        "price": 114.29
+      },
+      {
+        "_id": "653fc4712160d5fe64e44e57",
+        "departureCity": "653fc4302160d5fe64e44e54",
+        "destination": "Vancouver",
+        "distance": 3366,
+        "duration": 5,
+        "price": 342.86
+      },
+      {
+        "_id": "653fc4862160d5fe64e44e58",
+        "departureCity": "653fc4302160d5fe64e44e54",
+        "destination": "Ottawa",
+        "distance": 450,
+        "duration": 4,
+        "price": 57.14
+      }
+    ]
+  },
+  {
+    "_id": "653fc4ba2160d5fe64e44e5a",
+    "name": "Dubai",
+    "country": "ae",
+    "region": "Dubai Emirate",
+    "population": 3331000,
+    "language": "Arabic",
+    "currency": "AED",
+    "timezone": "GST",
+    "area": 4114,
+    "destinations": [
+      {
+        "_id": "653fc4da2160d5fe64e44e5d",
+        "departureCity": "653fc4ba2160d5fe64e44e5a",
+        "destination": "Abu Dhabi",
+        "distance": 140,
+        "duration": 1.5,
+        "price": 11.43
+      },
+      {
+        "_id": "653fc5092160d5fe64e44e5e",
+        "departureCity": "653fc4ba2160d5fe64e44e5a",
+        "destination": "Doha",
+        "distance": 379,
+        "duration": 1.5,
+        "price": 228.57
+      },
+      {
+        "_id": "653fc5542160d5fe64e44e5f",
+        "departureCity": "653fc4ba2160d5fe64e44e5a",
+        "destination": "Muscat",
+        "distance": 416,
+        "duration": 2,
+        "price": 57.14
+      }
+    ]
+  },
+  {
+    "_id": "653fc5c22160d5fe64e44e62",
+    "name": "Zagreb",
+    "country": "hr",
+    "region": "Grad Zagreb",
+    "population": 792875,
+    "language": "Croatian",
+    "currency": "EUR",
+    "timezone": "CET",
+    "area": 641,
+    "destinations": [
+      {
+        "_id": "653fc5df2160d5fe64e44e65",
+        "departureCity": "653fc5c22160d5fe64e44e62",
+        "destination": "Split",
+        "distance": 410,
+        "duration": 4,
+        "price": 28.57
+      },
+      {
+        "_id": "653fc5fd2160d5fe64e44e66",
+        "departureCity": "653fc5c22160d5fe64e44e62",
+        "destination": "Rijeka",
+        "distance": 165,
+        "duration": 2,
+        "price": 14.29
+      },
+      {
+        "_id": "653fc6172160d5fe64e44e67",
+        "departureCity": "653fc5c22160d5fe64e44e62",
+        "destination": "Osijek",
+        "distance": 280,
+        "duration": 3,
+        "price": 21.43
+      }
+    ]
+  }
+]
